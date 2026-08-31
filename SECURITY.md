@@ -1,4 +1,4 @@
-# Security Notes — Cyber Terrafor Professional v7.2
+# Security Notes — Cyber Terrafor Professional v11.1.0
 
 - Network assessment is scope-controlled.
 - The administration dashboard binds to localhost by default.
@@ -9,6 +9,6 @@
 - Reports may contain sensitive target information; protect the `reports/` directory.
 - Before exposing the admin dashboard beyond localhost, place it behind a trusted TLS reverse proxy and network access control.
 
-## Infrastructure adapter security boundary (v7.2)
+## Infrastructure adapter security boundary (v11.1.0)
 
 Provider adapters are deliberately read-only. The panel never turns stored SSH credentials into arbitrary command execution. Provider tokens should be least-privilege, scoped to the authorized account/site, and rotated periodically. cPanel endpoints must use HTTPS.
