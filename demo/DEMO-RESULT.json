@@ -1,0 +1,66 @@
+{
+  "demo": true,
+  "demo_notice": "SYNTHETIC DEMONSTRATION DATA \u2014 NOT A REAL TARGET",
+  "product": "Cyber Terrafor Enterprise",
+  "version": "7.2.0",
+  "target": "https://demo.example.invalid",
+  "assessment": "adaptive-analysis",
+  "timestamp": "2026-08-21T00:00:00Z",
+  "scope_status": "AUTHORIZED DEMO SCOPE (SYNTHETIC)",
+  "technology_stack": [
+    "Nginx",
+    "React",
+    "Next.js",
+    "Cloudflare"
+  ],
+  "risk_score": 62,
+  "risk_level": "MEDIUM",
+  "finding_counts": {
+    "critical": 0,
+    "high": 1,
+    "medium": 2,
+    "low": 2,
+    "info": 3
+  },
+  "findings": [
+    {
+      "id": "CF-DEMO-001",
+      "severity": "HIGH",
+      "status": "Potential",
+      "confidence": "medium",
+      "title": "Missing Content-Security-Policy",
+      "evidence": "Synthetic response headers omit Content-Security-Policy.",
+      "recommendation": "Deploy a tested CSP appropriate to the application and monitor violations before enforcement."
+    },
+    {
+      "id": "CF-DEMO-002",
+      "severity": "MEDIUM",
+      "status": "Observed",
+      "confidence": "high",
+      "title": "Cookie missing SameSite attribute",
+      "evidence": "Synthetic session cookie example lacks SameSite.",
+      "recommendation": "Set an appropriate SameSite value and review Secure/HttpOnly attributes."
+    },
+    {
+      "id": "CF-DEMO-003",
+      "severity": "MEDIUM",
+      "status": "Potential",
+      "confidence": "medium",
+      "title": "Public API documentation indicator",
+      "evidence": "Synthetic /swagger/ path returned a documentation marker.",
+      "recommendation": "Restrict API documentation to authorized environments or protect it with appropriate access controls."
+    }
+  ],
+  "reporting": {
+    "formats": [
+      "JSON",
+      "HTML",
+      "human-readable summary"
+    ],
+    "remediation_priority": [
+      "CF-DEMO-001",
+      "CF-DEMO-002",
+      "CF-DEMO-003"
+    ]
+  }
+}
