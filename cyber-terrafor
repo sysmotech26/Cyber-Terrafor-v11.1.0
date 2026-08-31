@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -e
+BASE="$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)"
+PYTHON="python3"
+if [ -x "$BASE/.venv/bin/python" ]; then
+  PYTHON="$BASE/.venv/bin/python"
+fi
+export PYTHONPATH="$BASE/src${PYTHONPATH:+:$PYTHONPATH}"
+exec "$PYTHON" "$BASE/src/cyber_terrafor.py" "$@"

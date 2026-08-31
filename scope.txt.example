@@ -1,0 +1,9 @@
+# Authorized hosts only
+# One domain, host, IP or CIDR per line.
+# Wildcard subdomains are supported, e.g. *.example.com
+# Keep this file limited to assets you own or have explicit permission to assess.
+localhost
+127.0.0.1
+# example.com
+# *.example.com
+# 192.168.1.0/24
