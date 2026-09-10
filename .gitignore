@@ -1,0 +1,91 @@
+# ==============================
+# Cyber Terrafor Professional
+# Git Ignore Configuration
+# ==============================
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Runtime reports
+reports/*
+!reports/.gitkeep
+
+# Runtime state
+state/*
+!state/.gitkeep
+
+# Local configuration
+config/config.yaml
+config/*.local.yaml
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# Credentials / private keys
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.csr
+
+# Secret files
+secrets/
+*.secret
+*_secret.*
+credentials.*
+credentials/
+tokens/
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# OS files
+desktop.ini
+
+# Database / local runtime files
+*.db
+*.sqlite
+*.sqlite3
+
+# Generated evidence / private artifacts
+evidence/
+private/
