@@ -1,3 +1,0 @@
-# Standard library only; no third-party packages required.
-
-cryptography>=43.0
